@@ -1,0 +1,143 @@
+/* Navbar Container */
+.navbar {
+    background-color: #f689e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .navbar:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Section */
+  .logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: gold;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .logo-box .logo {
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Navigation Links */
+  .navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    position: relative;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect for Links */
+  .navbar li:hover {
+    color: gold;
+    transform: scale(1.1);
+  }
+  
+  .navbar li::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: gold;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navbar li:hover::after {
+    width: 100%;
+  }
+  
+  /* Links Styling */
+  .navbar a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: gold;
+  }
+  
+  /* Responsive Design for Tablets and below */
+  
+  /* For Devices 768px and below */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  
+    .navbar li {
+      font-size: 1.2rem;
+      padding: 8px 10px;
+    }
+  
+    .logo-box {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  
+  /* For Mobile Devices 480px and below */
+  @media (max-width: 480px) {
+    .navbar li {
+      font-size: 1rem;
+      padding: 8px 12px;
+    }
+  
+    .navbar ul {
+      gap: 10px;
+    }
+  
+    .logo-box {
+      flex-direction: row;
+      gap: 5px;
+    }
+  
+    .logo-box span {
+      font-size: 1rem;
+    }
+  
+    /* Adjust logo size on small screens */
+    .logo {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  

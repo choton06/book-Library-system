@@ -1,0 +1,139 @@
+
+  /* Page Heading */
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #1a73e8;
+    font-size: 2rem;
+  }
+  
+  /* Book Details Container */
+  .book-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 20px;
+  }
+  
+  /* Hover Effect */
+  .book-details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image Section */
+  .book-details img {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .book-details:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Content Section */
+  .book-details div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .book-details h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .book-details h2 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .book-details p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #155bb5;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .book-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .book-details img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 15px;
+    }
+  
+    .book-details div {
+      align-items: center;
+      text-align: center;
+    }
+  
+    button {
+      align-self: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .book-details img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .book-details h1 {
+      font-size: 1.3rem;
+    }
+  
+    .book-details h2 {
+      font-size: 1rem;
+    }
+  
+    .book-details p {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  

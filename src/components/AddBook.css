@@ -1,0 +1,121 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Container */
+  .add-book-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form */
+  .add-book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #f689e0;
+    box-shadow: 0 0 5px rgba(246, 137, 224, 0.5);
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* Button */
+  .add-book-btn {
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #f689e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .add-book-btn:hover {
+    background-color: #d86fb2;
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .add-book-container {
+      padding: 15px;
+    }
+  
+    input,
+    textarea {
+      font-size: 0.9rem;
+    }
+  
+    .add-book-btn {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .add-book-container {
+      margin: 20px;
+      padding: 10px;
+    }
+  
+    .form-title {
+      font-size: 1.2rem;
+    }
+  
+    input,
+    textarea {
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+  
+    .add-book-btn {
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+  }
+  
